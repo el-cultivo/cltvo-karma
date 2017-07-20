@@ -1,0 +1,8 @@
+coverage/
+functions/
+node_modules/
+specs/share-event/
+specs/pure-functions-spec.js
+specs/share-event-spec.js
+alerts-controller.js
+vue/
