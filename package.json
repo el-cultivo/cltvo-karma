@@ -31,6 +31,6 @@
     "webpack": "^1.8.4"
   },
   "dependencies": {
-    "download-and-install": "^3.0.0"
+    "download-and-install": "^3.0.1"
   }
 }

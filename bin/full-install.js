@@ -3,7 +3,11 @@ const donwloadAndInstall = require('download-and-install')
 
 donwloadAndInstall(
 	'el-cultivo/cltvo-karma',
-	[['specs/**', 'test/specs'], ['karma.conf.js', 'test/'], ['test-context.js', 'test']], 
+	[
+		['specs/**', '.'], 
+		['karma.conf.js', '.'], 
+		['test-context.js', '.']
+	], 
 	[], 
 	{from_dev_dependencies: true, as_dev_dependencies: true}, 
 	() => console.log(`Todo listo!!
