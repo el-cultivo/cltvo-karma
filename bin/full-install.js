@@ -5,7 +5,7 @@ donwloadAndInstall(
 	'el-cultivo/cltvo-karma',
 	[
 		['specs/**', '.'], 
-		['karma.conf.js', '.'], 
+		['installable/karma.conf.js', '.'], 
 		['test-context.js', '.']
 	], 
 	[], 
