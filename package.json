@@ -2,7 +2,7 @@
   "name": "cltvo-karma",
   "version": "1.0.0",
   "description": "Configracion de Karma para los proyectos de El Cultivo",
-  "main": "index.js",
+  "main": "karma.conf.js",
   "scripts": {
     "test": "karma start"
   },
@@ -29,5 +29,8 @@
     "micorriza-karma-jasmine": "^1.0.1",
     "phantomjs-polyfill": "0.0.2",
     "webpack": "^1.8.4"
+  },
+  "dependencies": {
+    "download-and-install": "^3.0.0"
   }
 }
