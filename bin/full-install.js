@@ -10,10 +10,12 @@ donwloadAndInstall(
 	], 
 	[], 
 	{from_dev_dependencies: true, as_dev_dependencies: true}, 
-	() => console.log(`Todo listo!!
-		Sólo falta agregar la siguiente línea al package.json
-		"scripts": {
-			"test" : "karma start"
-		}
+	() => console.log(
+`
+Sólo falta agregar la siguiente línea al package.json
+"scripts": {
+	"test" : "karma start"
+}
+
 	`)
 )
