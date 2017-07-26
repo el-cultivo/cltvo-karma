@@ -1,3 +1,16 @@
+# cltvo-karma
+
+Éste módulo provee una instalación de Karma con Webpack/Jasmine/Istanbul para realizar tests en el Front End.
+
+Webpack se usa para compilar cæodigo escrito e ES6.
+
+Istanbul para estadisticas de covertura del código.
+
+Jasmine como el proveedor de la funcionalidad de los tests.
+
+El módulo permite realizar la pruebas en los siguientes buscadores: PhantomJS, Chrome, Firefox, Safari
+
+
 ## Instalación via npm
 
 `npm i cltvo-karma -D`
@@ -23,4 +36,19 @@ Agregar la siguiente linea al `package.json`
 "scripts": {
 	"test" : "karma start"
 }
+```
+
+
+## Uso
+
+Después de la instalación `npm test`
+
+Para correr los tests en otros buscadores distintos de PhantomJS, en `karma.conf.js`:
+```
+browsers: [
+    'PhantomJS', 
+    // 'Chrome',//descomentar para correr en los buscadores
+    // 'Firefox',
+    // 'Safari'
+],
 ```
