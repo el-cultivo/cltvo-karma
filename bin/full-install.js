@@ -17,5 +17,6 @@ Sólo falta agregar la siguiente línea al package.json
 	"test" : "karma start"
 }
 
+Por favor espera a que termine la instalación
 	`)
 )
