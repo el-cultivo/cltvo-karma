@@ -15,7 +15,7 @@ Agregar la siguiente linea al `package.json`
 
 ## Instalación manual
 
-Descargar el repositorio, copiar los archivos a sus respectivos lugares, instalar cada una de las dependencias del `package.json`
+Descargar el repositorio, copiar los archivos y folders (specs/, karma.conf y test-context) a sus respectivos lugares, instalar cada una de las dependencias del `package.json`
 
 Agregar la siguiente linea al `package.json`
 
