@@ -1,6 +1,6 @@
 {
   "name": "cltvo-karma",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Configracion de Karma para los proyectos de El Cultivo",
   "main": "karma.conf.js",
   "scripts": {
