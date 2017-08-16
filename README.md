@@ -18,11 +18,12 @@ El módulo carga jQuery y Vue, pues es lo que usamos en El Cultivo, pero pueden 
 
 El comando de instalación `node ./node_modules/cltvo-karma/bin/full-install.js` se ocupa instalar todas las dependencias y los archivos automáticamente, y debe correrse desde la carpeta que tiene el `package.json` donde se instaló `cltvo-karma`
 
-Agregar la siguiente linea al `package.json`
+Agregar las siguientes lineas al `package.json` (test:full corre toda la suite en PhantomJS, Chrome, Firefox y Safari, y produce un reportaje de covertura)
 
 ```
 "scripts": {
-	"test" : "karma start"
+	"test" : "karma start",
+	"test:full": "BROWSERS=all REPORTERS=all karma start"
 }
 ```
 

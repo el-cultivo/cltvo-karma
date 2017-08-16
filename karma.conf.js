@@ -1,12 +1,10 @@
+const browsers = mode => mode !== 'all' ? ['PhantomJS']  : ['PhantomJS', 'Chrome','Firefox','Safari']
+const reporters = mode => mode !== 'all' ? ['spec']  : ['spec', 'coverage-istanbul']
+
 module.exports = function(config) {
     config.set({
         loggers: [{type: 'console', pattern: '%d{HH:mm:ss} %m'}],
-        browsers: [
-            'PhantomJS', 
-            // 'Chrome',//descomentar para correr en los buscadores
-            // 'Firefox',
-            // 'Safari'
-        ],
+        browsers: browsers(process.env.BROWSERS),
 
         files: [
             './node_modules/jquery/dist/jquery.js',
@@ -22,10 +20,7 @@ module.exports = function(config) {
             'test-context.js': ['webpack', 'sourcemap']
         },
 
-        reporters: [
-            'spec', 
-            'coverage-istanbul'
-        ],
+        reporters: reporters(process.env.REPORTERS),
 
         coverageIstanbulReporter: {
             dir: 'coverage/',

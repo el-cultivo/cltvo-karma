@@ -4,6 +4,7 @@
   "description": "Configracion de Karma para los proyectos de El Cultivo",
   "main": "karma.conf.js",
   "scripts": {
+    "test:full": "BROWSERS=all REPORTERS=all karma start",
     "test": "karma start"
   },
   "author": "",
